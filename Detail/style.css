@@ -1,0 +1,298 @@
+.logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+body {
+    background-color: #082032;
+}
+
+header {
+    position: sticky;
+    background-color: #334756;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    padding: 30px;
+    color: #f0a500;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background: #f0a500;
+    color: #334756;
+}
+
+.navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #334756;
+    display: none;
+    /* height: 100px; */
+}
+
+.navbar ul li ul li {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar ul li ul li ul {
+    left: -200px;
+    top: 0;
+}
+
+.navbar ul li:hover > ul {
+    display: initial;
+}
+
+.infoKonser {
+    margin: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.poster {
+    width: 550px;
+}
+
+.detailKonser {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 25px;
+    color: #f0a500;
+    text-align: center;
+}
+
+h2 {
+    color:#f0a500;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.iconDetail {
+    width: 30px;
+}
+
+.jadwal {
+    font-size: 20px;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seatPlan {
+    width: 800px;
+    height: 800px;
+    margin: 15px;
+    justify-content: center;
+}
+
+.seatPlan1 {
+    width: 600px;
+    height: 800px;
+    margin: 15px;
+    justify-content: center;
+}
+
+.seatPlan2 {
+    width: 800px;
+    height: 500px;
+    margin: 15px;
+    justify-content: center;
+}
+
+.kategoriTiket {
+    margin: 5px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tipeTiket {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin-top: 15px;
+    background-color: #334756;
+    width: 400px;
+    height: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card1 {
+    margin-top: 15px;
+    background-color: #334756;
+    width: 400px;
+    height: 50px;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card2 {
+    margin-top: 15px;
+    background-color: #334756;
+    width: 400px;
+    height: 50px;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.detailKategori {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kategori {
+    color: #f0a500;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 250px;
+}
+
+.harga {
+    color: #f0a500;
+    font-size: 16px;
+}
+
+.qtySelect {
+    border: none;
+    /* background-color: #f0a500; */
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.bayarBtn {
+    margin-top: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    font-weight: bolder;
+    width: 460px;
+    background-color: #f0a500;
+}
+
+.bayarBtn:hover {
+    background-color: #082032;
+    color: #f0a500;
+    border: 1px solid;
+    border-color: #f0a500;
+}
+
+.bayarBtn1 {
+    margin-top: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    font-weight: bolder;
+    width: 480px;
+    background-color: #f0a500;
+}
+
+.bayarBtn1:hover {
+    background-color: #082032;
+    color: #f0a500;
+    border: 1px solid;
+    border-color: #f0a500;
+}
+
+footer {
+    background-color:#334756;
+    padding: 15px;
+}
+
+.footerCnt {
+    color: #f0a500;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding-top: 30px;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        padding-bottom: -20px;
+    }
+
+    .logo {
+        padding-right: 35px;
+    }
+
+    .carousel-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .kategoriTiket {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seatPlan{
+        width: 600px;
+        height: 600px;
+    }
+
+    .seatPlan2{
+        width: 600px;
+    }
+}

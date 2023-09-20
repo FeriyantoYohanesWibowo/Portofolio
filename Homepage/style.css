@@ -1,0 +1,230 @@
+.logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+body {
+    background-color: #082032;
+}
+
+header {
+    position: sticky;
+    background-color: #334756;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    padding: 30px;
+    color: #f0a500;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background: #f0a500;
+    color: #334756;
+}
+
+.navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #334756;
+    display: none;
+    /* height: 100px; */
+}
+
+.navbar ul li ul li {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar ul li ul li ul {
+    left: -200px;
+    top: 0;
+}
+
+.navbar ul li:hover > ul {
+    display: initial;
+}
+
+.slider-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 25px; */
+}
+
+.carousel{
+    margin: 0px;
+    /* padding-top: 45px; */
+    overflow: hidden;
+}
+
+.carousel-image-container{
+    height: 200px;
+    position: relative;
+}
+
+.carousel-image{
+    width: 1520px;
+    float: left;
+}
+
+.bestSeller {
+    margin: 35px 15px;
+}
+
+.rekomendasi {
+    margin: 35px 15px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    color: #f0a500;
+}
+
+.konserBestSeller {
+    display: flex;
+    gap: 15px;
+}
+
+.rank {
+    color: azure;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.konser {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.posterBestSeller {
+    height: 400px;
+}
+
+.judulKonser {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    font-size: 17px;
+}
+
+.konserDesc {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerRekomendasi {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+}
+
+.rekomendasiTiket {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: #334756;
+    width: 800px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.card:hover{
+    border: 1px solid;
+    border-color: #f0a500;
+}
+
+.poster {
+    height: 200px;
+    width: 150px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.detailRekomendasi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+h3 {
+    color: #f0a500;
+    font-size: x-large;
+}
+
+.namaTipeTiket {
+    color: #f0a500;
+    font-size: 16px;
+}
+
+.hargaTiket {
+    color: #ffff;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-left: 250px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+footer {
+    background-color:#334756;
+    padding: 15px;
+}
+
+.footerCnt {
+    color: #f0a500;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding-top: 30px;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        padding-bottom: -20px;
+    }
+
+    .logo {
+        padding-right: 35px;
+    }
+
+    .carousel-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

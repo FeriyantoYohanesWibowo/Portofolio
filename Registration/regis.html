@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/Homepage/Images/icon-ticks.png" class="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/Registration/regstye.css">
+</head>
+<body>
+    <header>
+        <a href="/Homepage/index.html">
+            <img src="/Homepage/Images/logo-ticks.png" alt="" class="logo">
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li id="menu"><a href=#>Menu</a>
+                    <ul id="extension">
+                        <li><a href="/Homepage/index.html">Home</a></li>
+                        <li><a href="/Ticket/index.html">Tickets</a></li>
+                        <li><a href="/Promotion/index.html">Promotion</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                   <a href="/Registration/regis.html">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="center">
+        <form action="/Homepage/index.html" id="myForm" class="form">
+            <h2 class="judul">Registration Form</h2>
+            <table>
+                <!-- Username -->
+                <tr class="elementForm">
+                <td class="nama"> Username </td>
+                <td> 
+                    <input type="text" name="usernameTxt" id="username" class="input">
+                    </td>
+                </tr>
+
+                <!-- Email -->
+                <tr class="elementForm">
+                    <td class="nama">Email</td>
+                    <td><input type="email" name="emailTxt" id="email" class="input" ></td>
+                </tr>
+                
+
+                <!-- Password  -->
+                <tr class="elementForm">
+                    <td class="nama"> Password </td>
+                    <td> 
+                        <input type="password" name="passTxt" id="pass" class="input">
+                    </td>
+                </tr>
+
+
+                <!-- Gender -->
+                <tr class="elementForm">
+                    <td class="nama"> Gender</td>
+                    <td class="nama"> 
+                        <input type="radio" name="genderTxt" value="Male" id="male" > 
+                        <label for="male">Male</label>
+                        <input type="radio" name="genderTxt" value="Female" id="female" > Female
+                    </td>
+                </tr>
+                
+
+                <tr class="elementForm">
+                    <td class="nama"> Phone Number </td>
+                    <td> 
+                        <input type="tel" name="phoneTxt" id="phone" name="phone"  placeholder="123-456-789-012" class="input">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="nama" colspan="2">
+                        <input type="checkbox" name="checkBox" id="check" value="Checked">
+                       <label for="check">I agree with terms and conditions </label> 
+                    </td>
+                    <td class="nama"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <p id="errorMessage" class="nama1"></p>
+                    </td>
+                </tr>
+
+                <!-- Button -->
+                <tr>
+                    <td colspan="2"  style="width: 500px;" >
+                        <button type="submit" class="button">
+                            Submit
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+   
+</body>
+<script src="/Registration/jquery-3.7.0.min.js"></script>
+<script src="/Registration/regisjs.js"></script>
+</html>

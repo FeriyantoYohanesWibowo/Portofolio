@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #082032;
+}
+
+header {
+    position: absolute;
+    background-color: #334756;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    padding: 30px;
+    color: #f0a500;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background: #f0a500;
+    color: #334756;
+}
+
+.navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #334756;
+    display: none;
+    /* height: 100px; */
+}
+
+.navbar ul li ul li {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar ul li ul li ul {
+    left: -200px;
+    top: 0;
+}
+
+.navbar ul li:hover > ul {
+    display: initial;
+}
+
+.logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+h1 {
+    margin: 0;
+    color: #f0a500;
+    padding-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.section1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 55px;
+}
+
+section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    /* padding-top: 200px; */
+}
+
+h2 {
+    color: #f0a500;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card {
+    background-color: #334756;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+}
+
+.upcoming {
+    opacity: 0.5;
+}
+
+.card h3 {
+    color: #f0a500;
+    margin-top: 0;
+}
+
+.card p {
+    color: #fff;
+}
+
+.btn {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    margin-left: 770px;
+}
+
+.btn:hover {
+    background-color: #082032;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+footer {
+    background-color:#334756;
+    padding: 15px;
+}
+
+.footerCnt {
+    color: #f0a500;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
